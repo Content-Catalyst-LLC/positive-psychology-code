@@ -1,0 +1,29 @@
+title: "The Economics of Well-Being"
+slug: "economics-of-wellbeing"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/economics-of-wellbeing"
+description: "Professional multi-language computational scaffold for economics of well-being, income security, life satisfaction, trust, institutions, inequality, work quality, care security, and network analysis."
+status: "companion-code"
+created: "2026-05-22"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - composite indicator design
+  - longitudinal mixed models
+  - estimated marginal means
+  - PCA dimensional inspection
+  - partial-correlation networks
+  - bootstrap network stability
+  - inequality penalty scoring
+  - work-care interaction modeling
+  - well-being economy simulation
