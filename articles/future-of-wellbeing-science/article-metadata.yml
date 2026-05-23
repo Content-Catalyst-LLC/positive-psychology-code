@@ -1,0 +1,28 @@
+title: "Future of Well-Being Science"
+slug: "future-of-wellbeing-science"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/future-of-wellbeing-science"
+description: "Professional multi-language computational scaffold for future well-being science, multidimensional flourishing, psychometrics, longitudinal modeling, and systems analysis."
+status: "companion-code"
+created: "2026-05-22"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - exploratory factor analysis
+  - confirmatory factor analysis
+  - longitudinal mixed models
+  - composite indicator sensitivity
+  - partial-correlation networks
+  - bootstrap network stability
+  - systems simulation
