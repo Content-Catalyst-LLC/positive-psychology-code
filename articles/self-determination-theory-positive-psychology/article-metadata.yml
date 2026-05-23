@@ -1,0 +1,31 @@
+title: "Self-Determination Theory in Positive Psychology"
+slug: "self-determination-theory-positive-psychology"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/self-determination-theory-positive-psychology"
+description: "Professional multi-language computational scaffold for Self-Determination Theory, autonomy, competence, relatedness, motivational quality, internalization, longitudinal analysis, network analysis, validation, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - SDT need-balance index design
+  - motivational-quality index design
+  - motivational-climate audit
+  - longitudinal mixed models
+  - estimated marginal means
+  - partial-correlation networks
+  - bootstrap network stability
+  - PCA dimensional inspection
+  - validation documentation
+  - responsible-use review
