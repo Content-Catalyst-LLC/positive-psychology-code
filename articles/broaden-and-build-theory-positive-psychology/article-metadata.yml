@@ -1,0 +1,33 @@
+title: "Broaden-and-Build Theory in Positive Psychology"
+slug: "broaden-and-build-theory-positive-psychology"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/broaden-and-build-theory-positive-psychology"
+description: "Professional multi-language computational scaffold for Broaden-and-Build Theory, positive emotion, cognitive broadening, resource building, resilience, stress recovery, longitudinal modeling, network analysis, validation, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - broadening index design
+  - resource index design
+  - net adaptation scoring
+  - recovery modeling
+  - upward-spiral simulation
+  - longitudinal mixed models
+  - estimated marginal means
+  - partial-correlation networks
+  - PCA dimensional inspection
+  - bootstrap network stability
+  - validation documentation
+  - responsible-use review
