@@ -1,0 +1,18 @@
+title: "Well-Being, Work, and Institutional Design"
+slug: "wellbeing-work-institutional-design"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/wellbeing-work-institutional-design"
+description: "Full multi-language computational scaffold for workplace well-being, institutional design, and workplace flourishing analysis."
+status: "companion-code"
+created: "2026-05-22"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
