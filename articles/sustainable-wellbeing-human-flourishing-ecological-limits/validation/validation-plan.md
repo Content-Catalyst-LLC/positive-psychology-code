@@ -22,9 +22,3 @@ Use this checklist before treating outputs as article-supporting evidence.
 - Test alternative functional forms.
 - Evaluate temporal lag structures for ecological and institutional indicators.
 - Run subgroup or regional checks where sample size permits.
-
-## Communication validation
-
-- Make uncertainty visible.
-- Avoid implying causality from cross-sectional association.
-- Disaggregate where averages conceal unequal exposure or burden.

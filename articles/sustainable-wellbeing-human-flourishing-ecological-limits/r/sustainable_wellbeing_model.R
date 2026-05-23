@@ -1,8 +1,3 @@
-# Longitudinal modeling for sustainable well-being
-#
-# Uses synthetic sample data. Replace with documented empirical data before
-# publication-quality analysis.
-
 suppressPackageStartupMessages({
   library(tidyverse)
   library(psych)

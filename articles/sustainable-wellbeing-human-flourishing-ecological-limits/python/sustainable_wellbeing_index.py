@@ -1,9 +1,4 @@
-"""Composite and network analysis for sustainable well-being.
-
-This script uses synthetic sample data included in the repository folder.
-Replace the sample data with documented empirical data before using this
-workflow for publication-quality analysis.
-"""
+"""Composite and network analysis for sustainable well-being."""
 
 from __future__ import annotations
 
@@ -42,9 +37,7 @@ COLUMNS = [
 
 
 def load_and_scale(path: Path) -> pd.DataFrame:
-    """Load data, impute missing values, and standardize indicators."""
     df = pd.read_csv(path)
-
     missing = [col for col in COLUMNS if col not in df.columns]
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
@@ -57,9 +50,7 @@ def load_and_scale(path: Path) -> pd.DataFrame:
 
 
 def build_composite_index(X_scaled: pd.DataFrame) -> pd.DataFrame:
-    """Construct a transparent composite index with pressure penalties."""
     result = X_scaled.copy()
-
     result["sustainable_wellbeing_index"] = (
         0.16 * result["life_satisfaction"]
         + 0.14 * result["meaning"]
@@ -71,15 +62,12 @@ def build_composite_index(X_scaled: pd.DataFrame) -> pd.DataFrame:
         - 0.04 * result["carbon_pressure"]
         - 0.04 * result["inequality_index"]
     )
-
     return result
 
 
 def run_pca(X_scaled: pd.DataFrame) -> pd.DataFrame:
-    """Run PCA as a dimensional inspection, not as a final theory."""
     pca = PCA(n_components=3)
     pca.fit_transform(X_scaled[COLUMNS])
-
     return pd.DataFrame(
         {
             "component": [1, 2, 3],
@@ -89,7 +77,6 @@ def run_pca(X_scaled: pd.DataFrame) -> pd.DataFrame:
 
 
 def build_partial_correlation_network(X_scaled: pd.DataFrame, threshold: float = 0.08) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Estimate a sparse partial-correlation network using Graphical Lasso."""
     glasso = GraphicalLassoCV()
     glasso.fit(X_scaled[COLUMNS])
 
@@ -125,12 +112,10 @@ def build_partial_correlation_network(X_scaled: pd.DataFrame, threshold: float =
     ).sort_values("eigenvector_centrality", ascending=False)
 
     draw_network(graph)
-
     return partial_df, centrality
 
 
 def draw_network(graph: nx.Graph) -> None:
-    """Save a network figure for article-adjacent analysis notes."""
     plt.figure(figsize=(10, 8))
 
     if graph.number_of_edges() > 0:

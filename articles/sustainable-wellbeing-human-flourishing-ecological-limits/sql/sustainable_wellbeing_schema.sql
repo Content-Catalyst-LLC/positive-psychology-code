@@ -1,6 +1,3 @@
--- Sustainable well-being indicator schema
--- Designed for analytical staging before modeling in R or Python.
-
 CREATE TABLE IF NOT EXISTS sustainable_wellbeing_observations (
     observation_id INTEGER PRIMARY KEY,
     entity_id TEXT NOT NULL,
@@ -29,7 +26,6 @@ ON sustainable_wellbeing_observations(entity_id, year);
 CREATE INDEX IF NOT EXISTS idx_swo_region_year
 ON sustainable_wellbeing_observations(region, year);
 
--- Example analytical view with a transparent composite score.
 CREATE VIEW IF NOT EXISTS sustainable_wellbeing_composite AS
 SELECT
     observation_id,
