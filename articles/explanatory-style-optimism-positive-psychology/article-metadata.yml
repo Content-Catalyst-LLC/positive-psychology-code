@@ -1,0 +1,32 @@
+title: "Explanatory Style and Optimism in Positive Psychology"
+slug: "explanatory-style-optimism-positive-psychology"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/explanatory-style-optimism-positive-psychology"
+description: "Professional multi-language computational scaffold for explanatory style, optimism, attributional burden, positive-event integration, agency, support, persistence, hope, wellbeing, distress, longitudinal analysis, network analysis, validation, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - explanatory-burden scoring
+  - positive-event integration scoring
+  - context-adjusted agency scoring
+  - institutional/context audit
+  - longitudinal mixed models
+  - estimated marginal means
+  - partial-correlation networks
+  - bootstrap network stability
+  - PCA dimensional inspection
+  - validation documentation
+  - responsible-use review
