@@ -1,4 +1,9 @@
-"""Composite and network analysis for sustainable well-being."""
+"""Composite and network analysis for sustainable well-being.
+
+This script uses synthetic sample data included in the article folder.
+Replace the sample data with documented empirical data before using the
+workflow for publication-quality analysis.
+"""
 
 from __future__ import annotations
 
@@ -37,20 +42,22 @@ COLUMNS = [
 
 
 def load_and_scale(path: Path) -> pd.DataFrame:
+    """Load data, impute missing values, and standardize indicators."""
     df = pd.read_csv(path)
     missing = [col for col in COLUMNS if col not in df.columns]
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
 
     imputer = SimpleImputer(strategy="median")
-    X = pd.DataFrame(imputer.fit_transform(df[COLUMNS]), columns=COLUMNS)
+    x_imputed = pd.DataFrame(imputer.fit_transform(df[COLUMNS]), columns=COLUMNS)
 
     scaler = StandardScaler()
-    return pd.DataFrame(scaler.fit_transform(X), columns=COLUMNS)
+    return pd.DataFrame(scaler.fit_transform(x_imputed), columns=COLUMNS)
 
 
-def build_composite_index(X_scaled: pd.DataFrame) -> pd.DataFrame:
-    result = X_scaled.copy()
+def build_composite_index(x_scaled: pd.DataFrame) -> pd.DataFrame:
+    """Construct a transparent composite index with pressure penalties."""
+    result = x_scaled.copy()
     result["sustainable_wellbeing_index"] = (
         0.16 * result["life_satisfaction"]
         + 0.14 * result["meaning"]
@@ -65,9 +72,10 @@ def build_composite_index(X_scaled: pd.DataFrame) -> pd.DataFrame:
     return result
 
 
-def run_pca(X_scaled: pd.DataFrame) -> pd.DataFrame:
+def run_pca(x_scaled: pd.DataFrame) -> pd.DataFrame:
+    """Run PCA as a dimensional inspection, not as a final theory."""
     pca = PCA(n_components=3)
-    pca.fit_transform(X_scaled[COLUMNS])
+    pca.fit_transform(x_scaled[COLUMNS])
     return pd.DataFrame(
         {
             "component": [1, 2, 3],
@@ -76,9 +84,12 @@ def run_pca(X_scaled: pd.DataFrame) -> pd.DataFrame:
     )
 
 
-def build_partial_correlation_network(X_scaled: pd.DataFrame, threshold: float = 0.08) -> tuple[pd.DataFrame, pd.DataFrame]:
+def build_partial_correlation_network(
+    x_scaled: pd.DataFrame, threshold: float = 0.08
+) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Estimate a sparse partial-correlation network using Graphical Lasso."""
     glasso = GraphicalLassoCV()
-    glasso.fit(X_scaled[COLUMNS])
+    glasso.fit(x_scaled[COLUMNS])
 
     precision = glasso.precision_
     partial_corr = -precision / np.sqrt(np.outer(np.diag(precision), np.diag(precision)))
@@ -116,6 +127,7 @@ def build_partial_correlation_network(X_scaled: pd.DataFrame, threshold: float =
 
 
 def draw_network(graph: nx.Graph) -> None:
+    """Save a network figure."""
     plt.figure(figsize=(10, 8))
 
     if graph.number_of_edges() > 0:
@@ -136,10 +148,10 @@ def draw_network(graph: nx.Graph) -> None:
 
 
 def main() -> None:
-    X_scaled = load_and_scale(DATA_PATH)
-    indexed = build_composite_index(X_scaled)
-    explained = run_pca(X_scaled)
-    partial_corr, centrality = build_partial_correlation_network(X_scaled)
+    x_scaled = load_and_scale(DATA_PATH)
+    indexed = build_composite_index(x_scaled)
+    explained = run_pca(x_scaled)
+    partial_corr, centrality = build_partial_correlation_network(x_scaled)
 
     indexed.to_csv(TABLE_DIR / "sustainable_wellbeing_scaled_index.csv", index=False)
     explained.to_csv(TABLE_DIR / "sustainable_wellbeing_pca_variance.csv", index=False)
