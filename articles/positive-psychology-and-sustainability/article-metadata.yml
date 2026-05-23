@@ -1,0 +1,30 @@
+title: "Positive Psychology and Sustainability"
+slug: "positive-psychology-and-sustainability"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/positive-psychology-and-sustainability"
+description: "Professional multi-language computational scaffold for positive psychology and sustainability, sustainable flourishing, ecological limits, institutions, health capacity, cumulative strain, and network analysis."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - composite indicator design
+  - longitudinal mixed models
+  - estimated marginal means
+  - PCA dimensional inspection
+  - partial-correlation networks
+  - bootstrap network stability
+  - ecological-strain interaction modeling
+  - sustainable flourishing simulation
+  - intergenerational sustainability scoring
