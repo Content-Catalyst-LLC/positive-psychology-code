@@ -1,0 +1,18 @@
+title: "The Politics of Well-Being Metrics"
+slug: "politics-of-wellbeing-metrics"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/politics-of-wellbeing-metrics"
+description: "Full multi-language computational scaffold for well-being metrics, public policy measurement, and governance-sensitive indicator analysis."
+status: "companion-code"
+created: "2026-05-22"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
