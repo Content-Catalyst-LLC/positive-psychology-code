@@ -1,0 +1,31 @@
+title: "Learned Helplessness and Depression in Positive Psychology"
+slug: "learned-helplessness-depression"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/learned-helplessness-depression"
+description: "Professional multi-language computational scaffold for learned helplessness, perceived control, uncontrollability, attribution, motivation, depressive symptoms, agency, support, recovery, longitudinal analysis, network analysis, validation, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - helplessness-index scoring
+  - agency-recovery scoring
+  - institutional/context audit
+  - longitudinal mixed models
+  - estimated marginal means
+  - partial-correlation networks
+  - bootstrap network stability
+  - PCA dimensional inspection
+  - validation documentation
+  - responsible-use review
