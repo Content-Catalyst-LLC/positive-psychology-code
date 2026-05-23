@@ -1,0 +1,34 @@
+title: "Character Strengths and Virtues in Positive Psychology"
+slug: "character-strengths-virtues-positive-psychology"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/character-strengths-virtues-positive-psychology"
+description: "Professional multi-language computational scaffold for character strengths, VIA-style profiles, virtue clusters, signature-strength use, context, institutional support, flourishing, longitudinal analysis, network analysis, validation, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - VIA-style strength profile scoring
+  - virtue-cluster scoring
+  - signature-strength use modeling
+  - contextual-support audit
+  - institutional-suppression analysis
+  - strength-overuse review
+  - longitudinal mixed models
+  - estimated marginal means
+  - partial-correlation networks
+  - bootstrap network stability
+  - PCA dimensional inspection
+  - validation documentation
+  - responsible-use review
