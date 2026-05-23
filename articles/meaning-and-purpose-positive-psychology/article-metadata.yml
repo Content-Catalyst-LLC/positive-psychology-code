@@ -1,0 +1,32 @@
+title: "Meaning and Purpose in Positive Psychology"
+slug: "meaning-and-purpose-positive-psychology"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/meaning-and-purpose-positive-psychology"
+description: "Professional multi-language computational scaffold for meaning and purpose, presence/search distinction, coherence, significance, belonging, value alignment, institutional context, longitudinal analysis, network analysis, validation, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - meaning-system index design
+  - context-adjusted meaning scoring
+  - directed-life index design
+  - institutional-context audit
+  - longitudinal mixed models
+  - estimated marginal means
+  - partial-correlation networks
+  - bootstrap network stability
+  - PCA dimensional inspection
+  - validation documentation
+  - responsible-use review
