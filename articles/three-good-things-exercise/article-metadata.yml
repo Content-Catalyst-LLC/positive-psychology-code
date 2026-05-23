@@ -1,0 +1,31 @@
+title: "The Three Good Things Exercise"
+slug: "three-good-things-exercise"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/three-good-things-exercise"
+description: "Professional multi-language computational scaffold for Three Good Things, gratitude, reflective practice, intervention effects, appreciative awareness, longitudinal modeling, network analysis, validation, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - reflective-practice adherence scoring
+  - appreciative-awareness composite design
+  - practice-quality audit
+  - longitudinal mixed models
+  - estimated marginal means
+  - partial-correlation networks
+  - bootstrap network stability
+  - intervention moderation
+  - validation documentation
+  - responsible-use review
