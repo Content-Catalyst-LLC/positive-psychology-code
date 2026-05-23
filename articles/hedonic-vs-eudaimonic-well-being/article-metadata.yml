@@ -1,0 +1,30 @@
+title: "Hedonic vs Eudaimonic Well-Being"
+slug: "hedonic-vs-eudaimonic-well-being"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/hedonic-vs-eudaimonic-well-being"
+description: "Professional multi-language computational scaffold for hedonic and eudaimonic well-being, measurement reliability, mixed models, network analysis, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - composite indicator design
+  - longitudinal mixed models
+  - estimated marginal means
+  - PCA dimensional inspection
+  - partial-correlation networks
+  - bootstrap network stability
+  - hedonic-eudaimonic interaction modeling
+  - measurement documentation
+  - responsible-use review
