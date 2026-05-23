@@ -1,0 +1,30 @@
+title: "The Science of Flourishing: How Positive Psychology Measures Well-Being"
+slug: "science-of-flourishing-measuring-well-being"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/science-of-flourishing-measuring-well-being"
+description: "Professional multi-language computational scaffold for the scientific measurement of flourishing, reliability, validity, measurement quality, multidimensional profiles, mixed models, network analysis, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - composite indicator design
+  - measurement-quality scoring
+  - longitudinal mixed models
+  - estimated marginal means
+  - PCA dimensional inspection
+  - partial-correlation networks
+  - bootstrap network stability
+  - validity documentation
+  - responsible-use review
