@@ -1,0 +1,30 @@
+title: "Positive Psychology and Public Health"
+slug: "positive-psychology-public-health"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/positive-psychology-public-health"
+description: "Professional multi-language computational scaffold for positive psychology and public health, population well-being, social determinants, health equity, resilience, public trust, stress load, and network analysis."
+status: "companion-code"
+created: "2026-05-22"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - composite indicator design
+  - social-determinants modeling
+  - longitudinal mixed models
+  - estimated marginal means
+  - PCA dimensional inspection
+  - partial-correlation networks
+  - bootstrap network stability
+  - stress-load penalty scoring
+  - housing-care interaction modeling
+  - public-health flourishing simulation
