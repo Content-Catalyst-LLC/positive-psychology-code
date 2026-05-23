@@ -1,0 +1,32 @@
+title: "Flow and Optimal Experience in Positive Psychology"
+slug: "flow-and-optimal-experience-positive-psychology"
+series: "Positive Psychology"
+article_map: "/positive-psychology/"
+github_url: "https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/flow-and-optimal-experience-positive-psychology"
+description: "Professional multi-language computational scaffold for flow, optimal experience, challenge-skill balance, attentional ecology, deep engagement, performance, learning, recovery, longitudinal analysis, network analysis, validation, and responsible interpretation."
+status: "companion-code"
+created: "2026-05-23"
+scope: "synthetic-data research and reproducibility scaffold"
+languages:
+  - C
+  - C++
+  - Fortran
+  - Go
+  - Julia
+  - Python
+  - R
+  - Rust
+  - SQL
+methods:
+  - reliability analysis
+  - challenge-skill balance scoring
+  - attentional-ecology index design
+  - sustainable-flow index design
+  - attention-context audit
+  - longitudinal mixed models
+  - estimated marginal means
+  - partial-correlation networks
+  - bootstrap network stability
+  - PCA dimensional inspection
+  - validation documentation
+  - responsible-use review
