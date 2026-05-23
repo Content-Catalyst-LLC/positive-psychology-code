@@ -1,0 +1,24 @@
+name: Python quality checks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  python-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Lint
+        run: ruff check articles/virtue-ethics-and-the-good-life/python
+      - name: Run workflows
+        run: |
+          python articles/virtue-ethics-and-the-good-life/python/generate_synthetic_virtue_data.py
+          python articles/virtue-ethics-and-the-good-life/python/virtue_panel_model.py
+          python articles/virtue-ethics-and-the-good-life/python/virtue_network_analysis.py
+          python articles/virtue-ethics-and-the-good-life/python/virtue_sensitivity_analysis.py

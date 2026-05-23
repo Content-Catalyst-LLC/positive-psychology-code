@@ -1,28 +1,21 @@
--- Article-level synthetic positive psychology schema.
+DROP TABLE IF EXISTS virtue_flourishing_panel;
 
-CREATE TABLE IF NOT EXISTS flourishing_observations (
-    observation_id INTEGER PRIMARY KEY,
-    participant_id TEXT NOT NULL,
-    wave INTEGER NOT NULL,
-    positive_emotion REAL,
-    engagement REAL,
-    relationships REAL,
-    meaning REAL,
-    accomplishment REAL,
-    health REAL,
-    hope REAL,
-    resilience REAL,
-    social_support REAL,
-    stress_load REAL,
-    intervention_exposure REAL,
-    flourishing_index REAL
+CREATE TABLE virtue_flourishing_panel (
+  id INTEGER,
+  wave INTEGER,
+  meaning REAL,
+  relationships REAL,
+  accomplishment REAL,
+  positive_emotion REAL,
+  strengths_wisdom REAL,
+  strengths_courage REAL,
+  strengths_humanity REAL,
+  strengths_justice REAL,
+  strengths_temperance REAL,
+  strengths_transcendence REAL,
+  reflective_judgment REAL,
+  institutional_support REAL,
+  stress_load REAL,
+  virtue_index REAL,
+  flourishing REAL
 );
-
-CREATE INDEX IF NOT EXISTS idx_flourishing_participant
-ON flourishing_observations(participant_id);
-
-CREATE INDEX IF NOT EXISTS idx_flourishing_wave
-ON flourishing_observations(wave);
-
-CREATE INDEX IF NOT EXISTS idx_flourishing_index
-ON flourishing_observations(flourishing_index);

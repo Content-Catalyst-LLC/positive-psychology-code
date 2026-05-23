@@ -1,0 +1,12 @@
+[project]
+name = "positive-psychology-code"
+version = "0.1.0"
+description = "Companion computational workflows for positive psychology research articles."
+requires-python = ">=3.10"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

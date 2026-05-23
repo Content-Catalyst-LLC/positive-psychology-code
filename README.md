@@ -1,28 +1,32 @@
 # Positive Psychology Code
 
-Open computational scaffolding for the Positive Psychology knowledge series.
+Companion computational research repository for articles in the Positive Psychology knowledge series.
 
-This repository supports article-level examples for flourishing, well-being measurement, PERMA, self-determination theory, flow, broaden-and-build theory, meaning, character strengths, hope, gratitude, resilience, explanatory style, subjective well-being, positive psychology interventions, positive education, public health, institutional design, sustainable well-being, and critiques of well-being metrics.
+This repository connects conceptual work in flourishing, meaning, resilience, virtue, well-being science, institutional design, and human development with transparent analytical workflows.
 
-## Structure
+## Current Article Directory
 
-Each article folder contains:
+- `articles/virtue-ethics-and-the-good-life/`
 
-- `python/`
-- `r/`
-- `julia/`
-- `cpp/`
-- `fortran/`
-- `c/`
-- `rust/`
-- `go/`
-- `sql/`
-- `notebooks/`
-- `docs/`
-- `data/raw/`
-- `data/processed/`
-- `outputs/`
+## Repository Principles
 
-## License
+- Use clear data dictionaries and reproducible workflows.
+- Separate synthetic/demo data from restricted or private research data.
+- Treat well-being and character measures as interpretive tools, not complete definitions of human flourishing.
+- Pair individual-level models with institutional and structural context.
+- Keep code auditable, documented, and portable across languages where useful.
 
-MIT License.
+## Suggested Workflow
+
+```bash
+cd positive-psychology-code
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+make virtue-data
+make virtue-python
+```
+
+## Article Companion URL
+
+`https://github.com/Content-Catalyst-LLC/positive-psychology-code/tree/main/articles/virtue-ethics-and-the-good-life`
